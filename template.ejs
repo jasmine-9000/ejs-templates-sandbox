@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Meowwwww
+    <ul class="rappers">
+    <% for(let i=0; i < info.length; i++) { %>
+        <li class="rapper">
+            Name: <span class="name"><%= info[i].name %></span>
+            Date: <span><%= info[i].date %></span>
+            Species: <span><%= info[i].species %></span>
+            Birth Name: <span><%= info[i].birthname %></span>
+        </li>
+    <% } %>
+    </ul>
+</body>
+</html>
